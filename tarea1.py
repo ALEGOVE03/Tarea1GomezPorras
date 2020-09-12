@@ -52,10 +52,10 @@ def basic_ops(op1,op2,sel):  #op1 y op2 opernados y sel es el selector de la ope
 
 def array_ops(arre1,arre2,sel):
 
-    n=len(arre1)
+    n=len(arre1) #obtiene la cantidad de elementos en el arreglo
     m=len(arre2)
-    resul=[]
-    aux=0
+    resul=[]   #resul es arreglo de salida
+    aux=0 #contador auxiliar
 
 
 #error cuando se seleciona una operacion que no este entre 0-3 
@@ -68,8 +68,8 @@ def array_ops(arre1,arre2,sel):
 
     
     
-    while (m > aux):
-        resul.append(basic_ops(arre1[aux],arre2[aux],sel))
+    while (m > aux): 
+        resul.append(basic_ops(arre1[aux],arre2[aux],sel)) #llama la funcion anterior con los elementes correspindientes del arreglo mediante el contador aux
         aux=aux+1
 
     return resul
