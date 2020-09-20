@@ -1,3 +1,6 @@
+# ERR 2
+# ERR10 (-2.5)
+# ERR4
 # Importar el método a verificar, en este caso basic_ops
 from tarea1 import basic_ops
 
